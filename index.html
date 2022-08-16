@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+  <title>Coderiver Test Task</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__left">
+          <div class="header__logo">
+            <a href="#">
+              <img src="./images/netflix-logo-png-2562 1.svg" alt="Netflix" width="156px" height="49px">
+            </a>
+          </div>
+          <p class="header__date">Friday July 8th</p>
+        </div>
+        <div class="header__right">
+          <button class="header__search_btn">
+            <img src="./images/fe_search.svg" alt="search">
+          </button>
+          <button class="header__user_btn">
+            <img src="./images/user_avatar.png" alt="user">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="content">
+        <div class="content__genres">
+          <p>Drama</p>
+          <p>Thriller</p>
+          <p>Supernatural</p>
+        </div>
+        <h1 class="content__title">Stranger Things</h1>
+        <div class="content__info">
+          <p class="divider">2019</p>
+          <p class="divider">DIRECTOR: <span>Shawn Levy</span></p>
+          <p>seasons: <span>3 (5 Episodes)</span></p>
+        </div>
+        <p class="content__description"> In 1980s Indiana, a group of young friends witness supernatural forces and
+          secret government exploits. As they search for answers, the children unravel a series of extraordinary
+          mysteries.</p>
+        <div class="content__rate">
+          <div class="star"><img src="./images/star_filled.svg" alt="rate"></div>
+          <div class="star"><img src="./images/star_filled.svg" alt="rate"></div>
+          <div class="star"><img src="./images/star_filled.svg" alt="rate"></div>
+          <div class="star"><img src="./images/star_outlined.svg" alt="rate"></div>
+          <div class="star"><img src="./images/star_outlined.svg" alt="rate"></div>
+        </div>
+        <div class="content__actions">
+          <button class="stream__btn" disabled="true">STREAM NOW</button>
+          <button class="episodes__btn">ALL EPISODES</button>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__top">
+          <p class="slider__title">POPULAR THIS WEEK</p>
+          <div class="slider__actions">
+            <button id="left__btn" class="disabled"><svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.69161 17.075L10.5892 15.1774L4.42532 9L10.5892 2.82263L8.69161 0.925001L0.616609 9L8.69161 17.075Z"
+                  fill="white" />
+              </svg></button>
+            <button id="right__btn" class="active"><svg width="12" height="19" viewBox="0 0 12 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5959 0.787498L0.548462 2.83494L7.199 9.5L0.548462 16.1651L2.5959 18.2125L11.3084 9.5L2.5959 0.787498Z"
+                  fill="white" />
+              </svg></button>
+          </div>
+        </div>
+        <div class="slider__body"></div>
+      </div>
+      <div class="age-rating">
+        <p>16+</p>
+      </div>
+    </div>
+  </main>
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+  <script type="importmap">{"imports": {"three": "https://unpkg.com/three@0.143.0/build/three.module.js"}}</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script type="module" src="js/background.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
